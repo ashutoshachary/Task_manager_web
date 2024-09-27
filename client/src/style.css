@@ -1,0 +1,223 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  body {
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+  }
+  
+  h2{
+    padding: 2px;
+    border-bottom: 2p solid black;
+    text-align: center;
+  }
+  form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: auto;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  input[type="password"]:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin: 5px;
+  }
+  .button1 {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    width:200px;
+    right: 0;
+    margin: 5px;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Dashboard styles */
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .task {
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .task h3 {
+    margin: 0;
+  }
+  
+  .task p {
+    color: #666;
+  }
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+  }
+  
+  .navbar .app-name {
+    font-size: 1.5em;
+  }
+  
+  .navbar .username {
+    margin-right: 20px;
+  }
+  
+  .filter-bar {
+    margin: 10px 0;
+  }
+  
+  .filter-bar button {
+    margin: 10px;
+   
+    padding: 5px 10px;
+    border: none;
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .filter-bar button:hover {
+    background-color: #218838;
+  }
+  
+  .filter-bar select {
+    padding: 5px;
+    margin-left: 10px;
+  }
+  
+  .task {
+    margin: 10px 0;
+    padding: 10px;
+  }
+
+  .filter-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+  }
+  
+  .filter-bar button,
+  .filter-bar select {
+    margin-right: 10px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .filter-bar button:hover,
+  .filter-bar select:hover {
+    background-color: #0056b3;
+  }
+  
+  .filter-bar select {
+    background-color: #f8f9fa;
+    color: #333;
+  }
+  
+
+  .form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 20px auto; 
+  }
+  
+  .error {
+    color: red;
+    margin-bottom: 10px;
+  }
+  
+  .form input,
+  .form textarea,
+  .form select {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    font-size: 16px; 
+    transition: border-color 0.3s ease;
+  }
+  
+  .form input:focus,
+  .form textarea:focus,
+  .form select:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  .form textarea {
+    height: 100px;
+    resize: none;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    width: 100%;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  
+  

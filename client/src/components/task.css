@@ -1,0 +1,43 @@
+.task-card {
+    border: 2px solid;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px 0;
+    background-color: #f8f9fa;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+  }
+  .task-card:hover {
+    transform: scale(1.02);
+  }
+  .button-group {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .complete-button,
+  .delete-button {
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .complete-button {
+    background-color: #28a745;
+    color: white;
+  }
+  .delete-button {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  .complete-button:hover {
+    background-color: #218838;
+  }
+  .delete-button:hover {
+    background-color: #c82333;
+  }
+  
