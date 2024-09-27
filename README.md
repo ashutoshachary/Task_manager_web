@@ -21,8 +21,8 @@ This is a **Task Management System** built with a **Node.js** and **Express** ba
 
 ### Prerequisites
 
-- [Node.js](https://nodejs.org/en/) (v14 or higher)
-- [MongoDB](https://www.mongodb.com/) (v4 or higher)
+- [Node.js](https://nodejs.org/en/)
+- [MongoDB](https://www.mongodb.com/) 
 
 ## Setup the `.env` file
 
