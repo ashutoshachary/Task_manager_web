@@ -10,8 +10,9 @@ const Signup = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    const apiUrl = process.env.REACT_APP_API_URL;
     try {
-      await axios.post('http://100.20.92.101:5000/api/auth/signup', { username, email, password });
+      await axios.post(`${apiUrl}/api/auth/signup`, { username, email, password });
       setSuccess('Account created successfully. Please log in.');
     } catch (err) {
       console.error(err);

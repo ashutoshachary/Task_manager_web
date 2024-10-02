@@ -13,8 +13,9 @@ const CreateTask = ({ onTaskCreated }) => {
     e.preventDefault();
     try {
       const token = localStorage.getItem('token');
+      const apiUrl = process.env.REACT_APP_API_URL;
       const newTask = { title, description, status, priority, due_date: dueDate };
-      const res = await axios.post('http://100.20.92.101:5000/api/tasks', newTask, {
+      const res = await axios.post(`${apiUrl}/api/tasks`, newTask, {
         headers: { Authorization: token },
       });
       onTaskCreated(res.data);

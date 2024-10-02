@@ -8,9 +8,10 @@ const Login = () => {
   const [error, setError] = useState('');
 
   const handleSubmit = async (e) => {
+    const apiUrl = process.env.REACT_APP_API_URL;
     e.preventDefault();
     try {
-      const res = await axios.post('http://100.20.92.101:5000/api/auth/login', { email, password });
+      const res = await axios.post(`${apiUrl}/api/auth/login`, { email, password });
       localStorage.setItem('token', res.data.token);
       window.location.href = '/dashboard';
     } catch (err) {

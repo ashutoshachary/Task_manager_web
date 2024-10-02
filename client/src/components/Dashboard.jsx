@@ -10,11 +10,12 @@ const Dashboard = () => {
 
   useEffect(() => {
     const token = localStorage.getItem('token');
+    const apiUrl = process.env.REACT_APP_API_URL;
     if (!token) {
       navigate('/login');
     } else {
       const fetchTasks = async () => {
-        const res = await axios.get('http://100.20.92.101:5000/api/tasks', {
+        const res = await axios.get(`${apiUrl}/api/tasks`, {
           headers: { Authorization: token },
         });
         setTasks(res.data);
@@ -35,7 +36,8 @@ const Dashboard = () => {
   const handleComplete = async (taskId) => {
     try {
       const token = localStorage.getItem('token');
-      await axios.put(`http://localhost:5000/api/tasks/${taskId}`, { status: 'Completed' }, {
+      const apiUrl = process.env.REACT_APP_API_URL;
+      await axios.put(`${apiUrl}/api/tasks/${taskId}`, { status: 'Completed' }, {
         headers: { Authorization: token },
       });
       setTasks((prevTasks) =>
@@ -49,7 +51,8 @@ const Dashboard = () => {
   const handleDelete = async (taskId) => {
     try {
       const token = localStorage.getItem('token');
-      await axios.delete(`http://localhost:5000/api/tasks/${taskId}`, {
+      const apiUrl = process.env.REACT_APP_API_URL;
+      await axios.delete(`${apiUrl}/api/tasks/${taskId}`, {
         headers: { Authorization: token },
       });
       setTasks((prevTasks) => prevTasks.filter((task) => task._id !== taskId));
