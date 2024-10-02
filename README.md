@@ -29,7 +29,10 @@ This is a **Task Management System** built with a **Node.js** and **Express** ba
 - MONGO_URI=mongodb://localhost:27017/taskmanager
 - JWT_SECRET=your_jwt_secret
 
-
+### View the Live Hosted website
+-- Click on link to visit
+- [https://task-manager-web-steel.vercel.app/](https://task-manager-web-steel.vercel.app/)
+  
 ### Installation
 
 1. **Clone the repository**:
@@ -38,7 +41,7 @@ This is a **Task Management System** built with a **Node.js** and **Express** ba
    cd client
    npm i
    npm start
-2. **For back end
+2. **For back-end
    ```bash
    cd backend
    npm i
