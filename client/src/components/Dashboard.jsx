@@ -14,7 +14,7 @@ const Dashboard = () => {
       navigate('/login');
     } else {
       const fetchTasks = async () => {
-        const res = await axios.get('http://localhost:5000/api/tasks', {
+        const res = await axios.get('http://100.20.92.101:5000/api/tasks', {
           headers: { Authorization: token },
         });
         setTasks(res.data);
