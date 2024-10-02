@@ -11,7 +11,7 @@ const Signup = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:5000/api/auth/signup', { username, email, password });
+      await axios.post('http://100.20.92.101:5000/api/auth/signup', { username, email, password });
       setSuccess('Account created successfully. Please log in.');
     } catch (err) {
       console.error(err);
