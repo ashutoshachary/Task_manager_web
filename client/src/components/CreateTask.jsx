@@ -14,7 +14,7 @@ const CreateTask = ({ onTaskCreated }) => {
     try {
       const token = localStorage.getItem('token');
       const newTask = { title, description, status, priority, due_date: dueDate };
-      const res = await axios.post('http://localhost:5000/api/tasks', newTask, {
+      const res = await axios.post('http://100.20.92.101:5000/api/tasks', newTask, {
         headers: { Authorization: token },
       });
       onTaskCreated(res.data);
