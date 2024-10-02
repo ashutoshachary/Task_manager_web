@@ -35,7 +35,14 @@ This is a **Task Management System** built with a **Node.js** and **Express** ba
 1. **Clone the repository**:
    ```bash
    git clone <repository-url>
-   cd task-manager
+   cd client
+   npm i
+   npm start
+2. **For back end
+   ```bash
+   cd backend
+   npm i
+   npm start
 
 
 
