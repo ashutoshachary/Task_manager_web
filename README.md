@@ -36,9 +36,7 @@ This is a **Task Management System** built with a **Node.js** and **Express** ba
    ```bash
    git clone <repository-url>
    cd task-manager
-### Hosted Link - Vist the website by clicking the below link
 
-- [https://task-manager-web-zeta.vercel.app/](https://task-manager-web-zeta.vercel.app/)
 
 
 ## Results
